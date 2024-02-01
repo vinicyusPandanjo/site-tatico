@@ -1,0 +1,172 @@
+.category {
+    .top-category {
+        margin-top: 17px;
+        margin-bottom: 40px;
+
+        @include device(md){
+            margin-bottom: 24px;
+        }
+
+        .container {
+            border-bottom: 1px solid $cinzaMedio;
+            text-align: center;
+
+            @include device(md){
+                border-bottom: none;
+            }
+
+            .category-info-title {
+                color: $pretoNautika;
+                text-align: center;
+                // font-family: Mundial;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+                /* 48px */
+
+                @include device(md){
+                    font-size: 24px;
+                }
+            }
+
+            .category-info-subtitle {
+                color: $pretoNautika;
+                text-align: center;
+                // font-family: Mundial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 150%;
+                /* 24px */
+
+                @include device(md){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .category_container {
+        margin-bottom: 24px;
+
+        .col-md-3,.col-md-9{
+            @include device(md){
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .col-md-3 {
+            
+            @include device(md){
+                margin-bottom: 24px;
+            }
+        }
+
+        .products {
+            .row {
+                .card-product {
+                    margin-bottom: 40px;
+
+
+                    @include device(sm){
+                        
+                            flex: 0 0 auto;
+                            width: 50%;
+                            padding: 0 5px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .info-category {
+        margin-bottom: 56px !important;
+
+        .banners-info-category {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include device(md){
+                display: none;
+            }
+        }
+
+        .info-category-content {
+            background-color: #000;
+            padding: 40px 0;
+
+            #saiba-mais {
+                color: #fff;
+
+                &.closed {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 8;
+                    -webkit-box-orient: vertical;
+                }
+
+                h1 {
+                    color: #FFF;
+                    // font-family: Mundial;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                    /* 36px */
+                }
+
+                h2 {
+                    color: #FFF;
+                    // font-family: Mundial;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: #FFF;
+                    // font-family: Mundial;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+
+                p {
+                    color: #FFF;
+                    // font-family: Mundial;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+
+    .faq {
+        margin-bottom: 56px;
+
+        >h2 {
+            color: #000;
+            // font-family: Mundial;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            /* 48px */
+        }
+
+        .accordion {
+            margin-top: 32px;
+        }
+    }
+}

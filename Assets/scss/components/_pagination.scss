@@ -1,0 +1,43 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    .page-item.active {
+        .page-link {
+            background-color: $cores-nautika-secundria-vinho;
+            border-color: $cores-nautika-secundria-vinho;
+            color: #fff;
+        }
+    }
+
+    .page-link:focus {
+        box-shadow: none;
+        background-color: white;
+    }
+
+    .page-link {
+        border-radius: 5px;
+        color: #000;
+        // font-family: Mundial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+        border: 1.5px solid #000;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $cores-nautika-secundria-vinho;
+            border-color: $cores-nautika-secundria-vinho;
+            background-color: white;
+        }
+    }
+
+    .page-link-arrow {
+        background: none;
+        border: none;
+    }
+}

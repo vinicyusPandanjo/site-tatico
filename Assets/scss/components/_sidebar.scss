@@ -1,0 +1,203 @@
+.sidebarMobile {
+    background-color: white;
+    display: none;
+
+    @include device(l) {
+        display: flex;
+        width: 350px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        padding: 32px 0;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+
+        /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include device(sm) {
+            width: 100%;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+
+            /* Firefox */
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 8px;
+        margin-bottom: 64px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .btn-close {
+        position: absolute;
+        top: -8px;
+        right: 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .social-media-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        padding-bottom: 16px;
+
+        h4 {
+            color: #000;
+            text-align: center;
+            // font-family: Mundial;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .social-media-sidebar-icone {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: auto;
+        }
+    }
+
+    .menu-category-filter {
+        width: 98%;
+
+        .category-filter-title {
+            color: $pretoNautika;
+            // font-family: Mundial;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 32px;
+        }
+
+        .category-filter-item {
+            border-bottom: 1px solid $pretoNautika;
+            margin-bottom: 14px;
+
+            .category-filter-item-title {
+                color: $pretoNautika;
+                // font-family: Mundial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background: url(../img/icone-down-down.png) no-repeat center center;
+                }
+
+                &.open {
+                    color: #A03233;
+                }
+
+                &.open::after {
+                    background: url(../img/icone-down-up.png) no-repeat center center;
+                    color: #A03233;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                display: none;
+
+                .list-item {
+                    cursor: pointer;
+
+                    label,
+                    input {
+                        cursor: pointer;
+                    }
+
+                    a {
+                        color: $pretoNautika;
+                        // font-family: Mundial;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        width: 100%;
+                    }
+
+                    .active {
+                        color: #A03233;
+                    }
+
+                    .form-check-input {
+                        border: 1px solid $pretoNautika;
+                    }
+
+                    .form-check-input:checked {
+                        background-color: #A03233;
+                        border: 1px solid #A03233;
+                    }
+
+                    .form-check-input:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+
+    &.open {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        left: 0;
+    }
+}

@@ -1,0 +1,191 @@
+.footer {
+    background-color: $backgroundLight;
+
+    .social-media,
+    .social-media-home {
+        background-color: $pretoNautika;
+        padding: 20px;
+
+        &-container {
+            gap: 80px;
+
+            @include device(sm) {
+                gap: 0px;
+                justify-content: space-between !important;
+                width: 100%;
+            }
+
+            a {
+                color: #FFF;
+                text-align: center;
+                /* Mundial/Body/Demibold/14px */
+                // font-family: Mundial;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                @media screen and (max-width: 348px) {
+                    font-size: 12px;
+
+                    img {
+                        width: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-media-home {
+        display: none !important;
+    }
+
+    .social-media {
+        padding: 0;
+
+        .social-media-container {
+            padding: 20px;
+        }
+
+        .tape-bg {
+            width: 100%;
+            height: 30px;
+            background: url(../img/tape-bg.png) no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    .infos-footer {
+        padding-top: 70px;
+        padding-bottom: 58px;
+
+        .title-footer {
+            color: $pretoNautika;
+            /* Mundial/Body/Bold/20px */
+            // font-family: Mundial;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            margin: 0;
+            /* 30px */
+        }
+
+        .list {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &.text-center-ul {
+                @include device(sm) {
+                    text-align: center;
+                }
+            }
+
+            .list-link-menu {
+                width: 100%;
+                display: inline-block;
+                color: $pretoNautika;
+                /* Mundial/Body/Bold/20px */
+                // font-family: Mundial;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+                text-decoration: none;
+                
+            }
+
+            .list-link {
+                color: $pretoNautika;
+                /* Mundial/Body/Regular/16px */
+                // font-family: Mundial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                /* 24px */
+                text-decoration: none;
+            }
+
+            .list-link-contact {
+                color: $pretoNautika;
+                /* Mundial/Body/Regular/20px */
+                // font-family: Mundial;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                text-decoration: none;
+
+                /* 30px */
+                @media screen and (max-width: 1048px) {
+                    font-size: 18px;
+                }
+
+                @include device(l) {
+                    font-size: 16px;
+                }
+
+                @include device(md) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .text-address {
+            color: $cinzaMedio;
+            // font-family: Mundial;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            margin-top: 65px;
+            /* 21px */
+        }
+    }
+
+    .bottom-footer {
+        border-top: 1px solid $cinzaMedio;
+        margin-top: 40px;
+
+        >div {
+            margin-top: 24px;
+
+            p {
+                color: $pretoNautika;
+                text-align: center;
+                // font-family: Mundial;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 150%;
+                /* 21px */
+                margin-top: 50px;
+
+                @include device(sm) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .col-mobile-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+.home {
+    .social-media {
+        display: none !important;
+    }
+
+    .social-media-home {
+        display: flex !important;
+    }
+}

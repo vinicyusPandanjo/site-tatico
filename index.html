@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Site Tático Nautika</title>
+    <meta name="description" content="Site Tático da Nautika">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="Assets/css/styles.css">
+</head>
+
+<body class="home">
+    <header class="container-fluid header">
+        <div class="container top_bar d-flex justify-content-lg-between align-items-center justify-content-md-start">
+
+            <button class="btn btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                    <path d="M1.2666 6.33334H36.7333M1.2666 19.6333H36.7333M1.2666 32.9333H36.7333" stroke="white"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <a href="/" class="logo-link">
+                <img src="Assets/img/logo_header.svg" alt="Logo Tático Nautika">
+            </a>
+            <div class="search-menu">
+                <div class="input-group">
+                    <input type="text" placeholder="O que você deseja buscar?" class="form-control shadow-none"
+                        id="search-prodouct" />
+                    <button type="submit" class="btn btn-search">
+                        <img src="Assets/img/lupa.svg" alt="Buscar">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg menu-desk d-none d-lg-flex">
+            <div class="container justify-content-center">
+                <ul class=" navbar-nav ">
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href=" # ">Acessórios</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href=" # ">Cases</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href=" # ">Defesa Pessoal</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href=" # ">Cutelaria</a>
+                    </li>
+                    <li class=" nav-item ">
+                        <a class=" nav-link " href=" # ">airsoft</a>
+                    </li>
+
+                    <li class=" nav-item ">
+                        <a class=" nav-link btn-link " href=" # ">Entre em contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay">
+            <div class="sidebarMobile" id="sidebarMobile">
+                <div class="container">
+                    <div id="head">
+                        <img src="Assets/img/logo_mobile-sid.png" alt="tag tático">
+                        <a href="/" class="btn-link-mobile">
+                            Entre em contato
+                        </a>
+                    </div>
+
+                    <button class="btn btn-close">
+                        <img src="Assets/img/close-sidebar.png" alt="Fechar">
+                    </button>
+
+                    <div class="menu-category-filter">
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Categoria</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Acessórios
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Cases
+                                    </a>
+
+                                </li>
+
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Defesa Pessoal
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Marca</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Preço</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 0 - R$ 50
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 50 - R$ 100
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 100 - R$ 150
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Categoria</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Acessórios
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Cases
+                                    </a>
+
+                                </li>
+
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Defesa Pessoal
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Marca</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Preço</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 0 - R$ 50
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 50 - R$ 100
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 100 - R$ 150
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Categoria</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Acessórios
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Cases
+                                    </a>
+
+                                </li>
+
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+
+                                        Defesa Pessoal
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Marca</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        Nautika
+                                    </a>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="category-filter-item">
+                            <h4 class="category-filter-item-title">Preço</h4>
+                            <ul class="list-unstyled list">
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 0 - R$ 50
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 50 - R$ 100
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" href="/">
+                                        R$ 100 - R$ 150
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="social-media-sidebar">
+                        <h4>Acompanhe nossas redes sociais</h4>
+
+                        <div class="social-media-sidebar-icone">
+                            <a href="/" class="d-flex align-items-center gap-1">
+                                <img src="Assets/img/youtube-icone-mob.svg" alt="Youtube">
+                            </a>
+                            <a href="/" class="d-flex align-items-center gap-1">
+                                <img src="Assets/img/instagram-icone-mob.svg" alt="Instagram">
+                            </a>
+                            <a href="/" class="d-flex align-items-center gap-1">
+                                <img src="Assets/img/facebook-icone-mob.svg" alt="Facebook">
+                            </a>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="carrousel-desk">
+            <a href="#" class="carrousel-item">
+                <img src="./Assets/img/banner_01.png" alt="banner" class="carrousel-img">
+            </a>
+            <a href="#" class="carrousel-item">
+                <img src="./Assets/img/banner_02.png" alt="banner" class="carrousel-img">
+            </a>
+        </div>
+        <div class="carrousel-mob">
+            <a href="#" class="carrousel-item">
+                <img src="./Assets/img/banner_01-mob.png" alt="banner" class="carrousel-img">
+            </a>
+            <a href="#" class="carrousel-item">
+                <img src="./Assets/img/banner_02-mob.png" alt="banner" class="carrousel-img">
+            </a>
+        </div>
+
+        <section class="brands container-fluid">
+            <div class="container stories-brands d-flex align-items-center ">
+
+
+                <p class="title_stories ">Nossas <strong>Marcas</strong></p>
+
+                <div class="brads_slider ">
+                    <a href="#" class="brads_link">
+                        <img src="./Assets/img/ntk-icone.png" alt="brand" class="brads_img">
+                    </a>
+                    <a href="#" class="brads_link">
+                        <img src="./Assets/img/rosman-icone.png" alt="brand" class="brads_img">
+                    </a>
+
+                    <a href="#" class="brads_link">
+                        <img src="./Assets/img/ekol-icone.png" alt="brand" class="brads_img">
+                    </a>
+
+                    <a href="#" class="brads_link">
+                        <img src="./Assets/img/tag-icone.png" alt="brand" class="brads_img">
+                    </a>
+
+                    <a href="#" class="brads_link">
+                        <img src="./Assets/img/armory.icone.png" alt="brand" class="brads_img">
+                    </a>
+
+                    <a href="#" class="brads_link">
+                        <img src="./Assets/img/poly-icone.png" alt="brand" class="brads_img">
+                    </a>
+
+                    <a href="#" class="brads_link">
+                        <img src="./Assets/img/norica.png" alt="brand" class="brads_img">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="banners_stores">
+
+                <div class="container">
+                    <div class="row justify-content-between banners_stores-container-desk">
+                        <div class="col">
+                            <a href="#" class="banner_store">
+                                <img src="./Assets/img/banner_store_01.png" alt="banner" class="banner_store_img">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="banner_store">
+                                <img src="./Assets/img/banner_store_02.png" alt="banner" class="banner_store_img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between banners_stores-container-mobile">
+                        <div class="col-12">
+                            <a href="#" class="banner_store">
+                                <img src="./Assets/img/banner_store_01_mob.png" alt="banner" class="banner_store_img">
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a href="#" class="banner_store">
+                                <img src="./Assets/img/banner_store_02_mob.png" alt="banner" class="banner_store_img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="categories_banner">
+                <div class=" container">
+                    <div class="categories_slider">
+                        <a href="#" class="categories_link">
+                            <img src="./Assets/img/acessorios-icone.png" alt="banner" class="categories_img">
+                        </a>
+                        <a href="#" class="categories_link">
+                            <img src="./Assets/img/airsoft-icone.png" alt="banner" class="categories_img">
+                        </a>
+                        <a href="#" class="categories_link">
+                            <img src="./Assets/img/cases-icone.png" alt="banner" class="categories_img">
+                        </a>
+                        <a href="#" class="categories_link">
+                            <img src="./Assets/img/defesa-pessoal-icone.png" alt="banner" class="categories_img">
+                        </a>
+                        <a href="#" class="categories_link">
+                            <img src="./Assets/img/cuteleira-icone.png" alt="banner" class="categories_img">
+                        </a>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="banners_products">
+                <div class="container">
+                    <div class="row justify-content-between banners_products_container-desk">
+                        <div class="col">
+                            <a href="#" class="banner_product">
+                                <img src="./Assets/img/Card-Produto-Canivete.png" alt="banner"
+                                    class="banner_product_img">
+                            </a>
+                        </div>
+                        <div class="col ">
+                            <a href="#" class="banner_product">
+                                <img src="./Assets/img/Card-Produto-Pistola.png" alt="banner"
+                                    class="banner_product_img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between banners_products_container-mob">
+                        <div class="col-12">
+                            <a href="#" class="banner_product">
+                                <img src="./Assets/img/Card-Produto-Canivete-mob.png" alt="banner"
+                                    class="banner_product_img">
+                            </a>
+                        </div>
+                        <div class="col-12 ">
+                            <a href="#" class="banner_product">
+                                <img src="./Assets/img/Card-Produto-Pistola-mob.png" alt="banner"
+                                    class="banner_product_img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="store-info container-fluid d-flex justify-content-between align-items-center">
+            <img src="Assets/img/wave_right.svg" alt="wave" class="wave">
+            <div class="benefits">
+                <div class="benefits-titles">
+
+                    <h2>
+                        OS MELHORES PRODUTOS TÁTICOS ESTÃO AQUI
+                    </h2>
+                    <h3>
+                        Estamos em todos os lugares, na trilha, na mata, no jogo e no combate!
+                    </h3>
+
+
+                </div>
+
+                <div class="benefits-box">
+
+                    <div class="card-benefits">
+                        <svg class="alvo" width="77" height="78" viewBox="0 0 77 78" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34.65 0.5V8.4695C27.8744 9.33006 21.5769 12.4178 16.7473 17.2473C11.9178 22.0769 8.83006 28.3744 7.9695 35.15H0V42.85H7.9695C8.83006 49.6256 11.9178 55.9231 16.7473 60.7527C21.5769 65.5822 27.8744 68.6699 34.65 69.5305V77.5H42.35V69.5305C49.1256 68.6699 55.4231 65.5822 60.2527 60.7527C65.0822 55.9231 68.1699 49.6256 69.0305 42.85H77V35.15H69.0305C68.1699 28.3744 65.0822 22.0769 60.2527 17.2473C55.4231 12.4178 49.1256 9.33006 42.35 8.4695V0.5M34.65 16.208V23.6H42.35V16.2465C51.975 17.825 59.675 25.525 61.292 35.15H53.9V42.85H61.2535C59.675 52.475 51.975 60.175 42.35 61.792V54.4H34.65V61.7535C25.025 60.175 17.325 52.475 15.708 42.85H23.1V35.15H15.7465C17.325 25.525 25.025 17.825 34.65 16.208ZM38.5 35.15C37.4789 35.15 36.4997 35.5556 35.7776 36.2776C35.0556 36.9997 34.65 37.9789 34.65 39C34.65 40.0211 35.0556 41.0003 35.7776 41.7224C36.4997 42.4444 37.4789 42.85 38.5 42.85C39.5211 42.85 40.5003 42.4444 41.2224 41.7224C41.9444 41.0003 42.35 40.0211 42.35 39C42.35 37.9789 41.9444 36.9997 41.2224 36.2776C40.5003 35.5556 39.5211 35.15 38.5 35.15Z"
+                                fill="#848484" />
+                        </svg>
+                        <div class="card-benefits-text">
+                            <strong class="card-benefits-title">
+                                PRECISÃO E POTÊNCIA</strong>
+                            <p class="card-benefits-description">
+                                Garantindo uma melhor experiência de uso para você
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-benefits">
+                        <svg class="frame-28" width="77" height="78" viewBox="0 0 77 78" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M70 35.5C70 54.925 56.56 73.09 38.5 77.5C20.44 73.09 7 54.925 7 35.5V14.5L38.5 0.5L70 14.5V35.5ZM38.5 70.5C51.625 67 63 51.39 63 36.27V19.05L38.5 8.13L14 19.05V36.27C14 51.39 25.375 67 38.5 70.5ZM48.3 35.5V30.25C48.3 25.35 43.4 21.5 38.5 21.5C33.6 21.5 28.7 25.35 28.7 30.25V35.5C26.6 35.5 24.5 37.6 24.5 39.7V51.95C24.5 54.4 26.6 56.5 28.7 56.5H47.95C50.4 56.5 52.5 54.4 52.5 52.3V40.05C52.5 37.6 50.4 35.5 48.3 35.5ZM43.75 35.5H33.25V30.25C33.25 27.45 35.7 25.7 38.5 25.7C41.3 25.7 43.75 27.45 43.75 30.25V35.5Z"
+                                fill="#848484" />
+                        </svg>
+                        <div class="card-benefits-text">
+                            <strong class="card-benefits-title">
+                                SEGURANÇA GARANTIDA</strong>
+                            <p class="card-benefits-description">
+                                Produtos testados e seguros para sua proteção
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="card-benefits">
+                        <svg class="vector2" width="77" height="78" viewBox="0 0 77 78" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M69.3 39C69.3 47.1687 66.055 55.0028 60.2789 60.7789C54.5028 66.5551 46.6687 69.8 38.5 69.8C30.3313 69.8 22.4972 66.5551 16.7211 60.7789C10.945 55.0028 7.7 47.1687 7.7 39C7.7 30.8314 10.945 22.9973 16.7211 17.2212C22.4972 11.445 30.3313 8.20005 38.5 8.20005C41.426 8.20005 44.275 8.62355 46.97 9.39355L53.0145 3.34905C48.4111 1.45318 43.4785 0.484992 38.5 0.500051C33.4441 0.500051 28.4377 1.49588 23.7667 3.43069C19.0957 5.3655 14.8514 8.20138 11.2764 11.7764C4.05624 18.9966 0 28.7892 0 39C0 49.2109 4.05624 59.0035 11.2764 66.2237C14.8514 69.7987 19.0957 72.6346 23.7667 74.5694C28.4377 76.5042 33.4441 77.5001 38.5 77.5001C48.7108 77.5001 58.5035 73.4438 65.7236 66.2237C72.9438 59.0035 77 49.2109 77 39M22.7535 31.608L17.325 37.0751L34.65 54.4L73.15 15.9001L67.7215 10.4331L34.65 43.5046L22.7535 31.608Z"
+                                fill="#848484" />
+                        </svg>
+                        <div class="card-benefits-text">
+                            <strong class="card-benefits-title">
+                                GARANTIA DE 12 MESES</strong>
+                            <p class="card-benefits-description">
+                                Maior confiança para você realizar sua compra
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="card-benefits">
+                        <svg class="vector3" width="77" height="74" viewBox="0 0 77 74" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M38.4211 51.9458L23.9747 60.6674L27.7784 44.2232L15.0226 33.1579L31.8511 31.7363L38.4211 16.2142L44.9911 31.7363L61.8195 33.1579L49.0637 44.2232L52.8674 60.6674M76.8421 28.3168L49.2174 25.9732L38.4211 0.5L27.6247 25.9732L0 28.3168L20.9395 46.49L14.6768 73.5L38.4211 59.1689L62.1653 73.5L55.8642 46.49L76.8421 28.3168Z"
+                                fill="#848484" />
+                        </svg>
+                        <div class="card-benefits-text">
+                            <strong class="card-benefits-title">
+                                MARCAS DE QUALIDADE</strong>
+                            <p class="card-benefits-description">
+                                As melhores marcas estão aqui! Fale conosco e saiba mais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <img src="Assets/img/wave_left.svg" alt="wave" class="wave">
+        </section>
+
+        <section class="more-content container-fluid">
+            <div class="container">
+
+                <h2>EXPLORE MAIS CONTEÚDOS</h2>
+                <h3>Saiba mais sobre atividades táticas e lazer no nosso Blog</h3>
+                <div class="row gy-3">
+
+                    <div class="col-sm">
+                        <a class="card h-100" href="/">
+                            <img src="Assets/img/gun_image.png" class="card-img-top" alt="noticia">
+                            <div class="card-body">
+                                <small class="data">5 de abril de 2020</small>
+                                <h5 class="card-title">Dicas de segurança ao acampar em diferentes condições climáticas
+                                </h5>
+                                <p class="card-text">Acampar é uma experiência revigorante que nos conecta com a
+                                    natureza de uma maneira única, proporcionando momentos inesquecíveis. No entanto, a
+                                    segurança deve ser a prioridade número um ao embar [...]</p>
+
+                                <small class="read">3 minutos de leitura</small>
+                            </div>
+
+                            <span class="flag flag__tactic">Tático</span>
+                        </a>
+                    </div>
+
+                    <div class="col-sm">
+                        <a class="card h-100" href="/">
+                            <img src="Assets/img/gun_image.png" class="card-img-top" alt="noticia">
+                            <div class="card-body">
+                                <small class="data">5 de abril de 2020</small>
+                                <h5 class="card-title">Quais são os principais peixes da região Sudeste do Brasil?
+                                </h5>
+                                <p class="card-text">Olá, pescadores e aventureiros (as)! Na sequência da matéria sobre
+                                    os principais tipos de peixes, vamos falar da região Sudeste. Ela é composta pelos
+                                    estados de Espírito Santo, Minas Gerais, Rio [...]</p>
+
+                                <small class="read">3 minutos de leitura</small>
+
+                            </div>
+
+                            <span class="flag flag__tactic">Tático</span>
+                        </a>
+                    </div>
+
+                    <div class="col-sm">
+                        <a class="card h-100" href="/">
+                            <img src="Assets/img/gun_image.png" class="card-img-top" alt="noticia">
+                            <div class="card-body">
+                                <small class="data">5 de abril de 2020</small>
+                                <h5 class="card-title">
+                                    O que é Valor R em Isolantes Térmicos?
+                                </h5>
+                                <p class="card-text">Se você é um entusiasta de camping e aventuras ao ar livre, já deve
+                                    ter ouvido falar sobre o misterioso “Valor R” ao escolher seu equipamento. Mas o que
+                                    exatamente é esse valor e por q [...]</p>
+
+                                <small class="read">3 minutos de leitura</small>
+                            </div>
+
+                            <span class="flag flag__tactic">Tático</span>
+
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a class="card h-100" href="/">
+                            <img src="Assets/img/gun_image.png" class="card-img-top" alt="noticia">
+                            <div class="card-body">
+                                <small class="data">5 de abril de 2020</small>
+                                <h5 class="card-title">
+                                    O que é Valor R em Isolantes Térmicos?
+                                </h5>
+                                <p class="card-text">Se você é um entusiasta de camping e aventuras ao ar livre, já deve
+                                    ter ouvido falar sobre o misterioso “Valor R” ao escolher seu equipamento. Mas o que
+                                    exatamente é esse valor e por q [...]</p>
+
+                                <small class="read">3 minutos de leitura</small>
+                            </div>
+
+                            <span class="flag flag__tactic">Tático</span>
+
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+                <a href="https://blog.nautikalazer.com.br/" class="btn btn-blog">Acesse o Blog</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="d-flex justify-content-center  social-media-home">
+            <div class="d-flex justify-content-center social-media-container">
+                <a href="/" class="d-flex align-items-center gap-1">
+                    <img src="Assets/img/facebook-icone.svg" alt="Facebook"> /tagtactical
+                </a>
+
+                <a href="/" class="d-flex align-items-center gap-1">
+                    <img src="Assets/img/instagram-icone.svg" alt="Instagram"> /tagtactical
+                </a>
+                <a href="/" class="d-flex align-items-center gap-1">
+                    <img src="Assets/img/youtube-icone.svg" alt="Youtube"> /tagtactical
+                </a>
+
+            </div>
+        </section>
+        <section class="d-flex justify-content-center flex-column social-media ">
+            <div class="tape-bg"></div>
+            <div class="d-flex justify-content-center social-media-container">
+                <a href="/" class="d-flex align-items-center gap-1">
+                    <img src="Assets/img/facebook-icone.svg" alt="Facebook"> /tagtactical
+                </a>
+
+                <a href="/" class="d-flex align-items-center gap-1">
+                    <img src="Assets/img/instagram-icone.svg" alt="Instagram"> /tagtactical
+                </a>
+                <a href="/" class="d-flex align-items-center gap-1">
+                    <img src="Assets/img/youtube-icone.svg" alt="Youtube"> /tagtactical
+                </a>
+
+            </div>
+            <div class="tape-bg"></div>
+        </section>
+
+        <section class="infos-footer container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-mobile-footer">
+                        <img src="Assets/img/logo_footer.png" alt="Logo Tático Nautika">
+                        <ul class="list-unstyled list text-center-ul">
+
+                            <li class="list-item ">
+                                <a href="/" class="list-link-menu" class="list-link-menu">Acessórios</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/" class="list-link-menu">Cases</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/" class="list-link-menu">Defesa Pessoal</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/" class="list-link-menu">Cutelaria</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/" class="list-link-menu">Airsoft</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="title-footer">Institucional</h3>
+                        <ul class="list-unstyled list">
+                            <li class="list-item">
+                                <a href="/insitucional/quem-somos" class="list-link">Quem Somos</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/seguranca-e-privacidade" class="list-link">Segurança e
+                                    Privacidade</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/catalogo-de-produtos-2023" class="list-link">Catálogo de Produtos
+                                    2023</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/seja-um-revendedor" class="list-link">Seja um Revendedor</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="https://blog.nautikalazer.com.br/" class="list-link">Blog</a>
+                            </li>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="title-footer">Ajuda</h3>
+
+                        <ul class="list-unstyled list">
+                            <li class="list-item">
+                                <a href="/insitucional/politica-de-pagamentos" class="list-link">Política de
+                                    Pagamentos</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/politica-de-entrega" class="list-link">Serviços de Entrega</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/politica-de-trocas-e-devolucoes" class="list-link">Termos e
+                                    Condições</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/politica-de-trocas-e-devolucoes" class="list-link">Trocas e
+                                    Devoluções</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/termo-de-consentimento" class="list-link">Termo de
+                                    Consentimento</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/fale-conosco" class="list-link">Fale Conosco</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="/insitucional/manuais" class="list-link">Manuais</a>
+                            </li>
+
+
+
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-3 p-0">
+                        <h3 class="title-footer">Atendimento</h3>
+
+                        <ul class="list-unstyled list">
+                            <li class="list-item ">
+                                <a href="tel:1120854622" class="list-link-contact">11 2085-4622</a>
+                            </li>
+                            <li class="list-item overflow-auto">
+                                <a href="mailto:ecommerce@nautika.com.br"
+                                    class="list-link-contact">ecommerce@nautika.com.br</a>
+                            </li>
+
+                        </ul>
+
+
+                        <p class="text-address">
+                            Vendas PJ - De 2ª à 6ª feira, das 08h às 18h<br /> SAC - De 2ª à 6ª feira das 08h às 17h
+                            Guarulhos/SP
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="bottom-footer">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-lg-end justify-content-sm-center">
+                            <img src="Assets/img/Site-Seguro-icone.svg" alt="Site Seguro">
+                        </div>
+
+                        <p class="text-center">
+                            As imagens dos produtos são meramente ilustrativas. Todos os preços e condições comerciais
+                            estão sujeitos a alteração sem aviso prévio. <br />© 2023 NAUTIKA COMÉRCIO ELETRÔNICO LTDA.
+                            CNPJ 24.047.923/0001-67 - Rua Santana de
+                            Ipanema, 597 - Cumbica - Guarulhos/SP
+                        </p>
+
+                    </div>
+                </div>
+        </section>
+    </footer>
+
+
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js "
+        integrity=" sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+        crossorigin=" anonymous " referrerpolicy=" no-referrer "></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="Assets/js/app.js" async defer type="module"></script>
+</body>
+
+</html>

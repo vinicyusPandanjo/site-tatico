@@ -1,0 +1,49 @@
+.breadcrumb {
+    @include device(sm){
+        flex-wrap: nowrap;
+    }
+    .breadcrumb-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $pretoNautika;
+        /* Mundial/Body/Regular/14px */
+        // font-family: Mundial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: "";
+        height: 8px;
+        width: 3px;
+        background-color: $pretoNautika;
+        border-radius: 50px;
+        margin-bottom: -4px;
+    }
+
+    .breadcrumb-item:last-child {
+        color: $cores-nautika-secundria-vinho;
+
+        @include device(sm){
+            width: 65%;
+            
+            a{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+               
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            a{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 150px;}
+        }
+    }
+}

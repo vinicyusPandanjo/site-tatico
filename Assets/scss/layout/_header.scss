@@ -1,0 +1,96 @@
+.header {
+    padding: 0; // background-color: red;
+    background-color: $pretoNautika;
+
+    .top_bar {
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        @include device(l) {
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .logo-link {
+            @include device(l) {
+                margin: 0 auto;
+                width: 100px;
+            }
+        }
+
+        .search-menu {
+            width: 450px;
+
+            @include device(l) {
+                width: 100%;
+            }
+
+            #search-prodouct {
+                &:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+
+            .btn-search {
+                background-color: $brancoNautika;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    background-color: $cinzaMedio;
+                    width: 0.5px;
+                    height: 90%;
+                    position: absolute;
+                    left: 0;
+                    top: 5%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    nav.navbar {
+        background-color: $brancoNautika;
+        border-bottom: 1px solid $cinzaMedio;
+
+        .navbar-nav {
+            gap: 50px;
+
+            .nav-link {
+                color: $pretoNautika;
+                text-align: center;
+                // font-family: Mundial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $vermelhoVinhoTAG;
+                    text-decoration: underline;
+                }
+
+                &.btn-link {
+                    display: flex;
+                    width: 206px;
+                    height: 32px;
+                    padding: 8px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    flex-shrink: 0;
+                    border-radius: 5px;
+                    background: $pretoNautika;
+                    color: $brancoNautika;
+
+                    &:hover {
+                        text-decoration: none;
+                        background-color: $vermelhoVinhoTAG;
+                    }
+                }
+            }
+        }
+    }
+}

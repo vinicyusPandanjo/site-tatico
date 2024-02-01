@@ -1,0 +1,201 @@
+.category-filter,.category-filter-mobile {
+    .category-filter-title {
+        color: $pretoNautika;
+        // font-family: Mundial;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 32px;
+    }
+    .controls-remove-filter {
+        display: none;
+        .remove-all-filter {
+            color: #A03233;
+            // font-family: Mundial;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-bottom: 1px solid #A03233;
+            padding-bottom: 2px;
+            margin-bottom: 16px;
+        }
+        #ul-filters-active {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 0;
+            .item-filter-active {
+                color: $brancoNautika;
+                // font-family: Mundial;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                background: #A03233;
+                padding: 4px 8px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .btn-remove-filter {
+                    border: none;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .category-filter-item {
+        border-bottom: 1px solid $pretoNautika;
+        margin-bottom: 14px;
+        .category-filter-item-title {
+            color: $pretoNautika;
+            // font-family: Mundial;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &::after {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../img/icone-down-down.png) no-repeat center center;
+            }
+            &.open {
+                color: #A03233;
+            }
+            &.open::after {
+                background: url(../img/icone-down-up.png) no-repeat center center;
+                color: #A03233;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            display: none;
+            .list-item {
+                cursor: pointer;
+                label,
+                input {
+                    cursor: pointer;
+                }
+                label {
+                    color: $pretoNautika;
+                    // font-family: Mundial;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    width: 100%;
+                }
+                .active {
+                    color: #A03233;
+                }
+                .form-check-input {
+                    border: 1px solid $pretoNautika;
+                }
+                .form-check-input:checked {
+                    background-color: #A03233;
+                    border: 1px solid #A03233;
+                }
+                .form-check-input:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.category-filter-mobile{
+    background-color: #fff;
+    height: 100vh;
+    width: 95%;
+    position: fixed;
+    top: 0;
+    
+    z-index: 999;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    visibility: hidden;
+    opacity: 0;
+    right: -100%;
+    transition: all 0.2s ease-in-out;
+
+    &.active{
+        visibility: visible;
+        opacity: 1;
+        right: 0;
+    }
+
+    .container{
+        
+        height: 100%;
+        overflow-y: auto;
+        padding-top: 40px;
+        padding-bottom: 34px;
+        display: flex;
+        flex-direction: column;
+
+        .title-category-filter-mobile{
+            text-align: center;
+            color:  #000;
+            // font-family: Mundial;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 34px;
+        }
+
+        .btn-remove-filter-mobile{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+
+    .controls-button-filter{
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        
+    }
+}
+.overlay-filter{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    visibility: hidden;
+    opacity: 0;
+    
+
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+.btn-filter{
+    margin-left: auto;
+}

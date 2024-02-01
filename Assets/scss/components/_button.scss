@@ -1,0 +1,208 @@
+.btn-blog {
+    border-radius: 5px;
+    border: 1px solid $brancoNautika;
+    color: $brancoNautika;
+    /* Mundial/Body/Demibold/16px */
+    // font-family: Mundial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    display: block;
+    width: 170px;
+    padding: 12px 22px;
+
+    &:hover {
+        background-color: $brancoNautika;
+        color: $pretoNautika;
+    }
+}
+
+.see-more {
+    color: #000;
+    // font-family: Mundial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 24px */
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 6px 16px;
+    border-radius: 5px;
+    background: #FFF;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    outline: none;
+    margin-top: 16px;
+
+    &:hover {
+        background: $cores-nautika-secundria-vinho;
+        color: #FFF;
+
+        svg {
+            stroke: #FFF;
+            transition: all 0.2s ease-in-out;
+
+            path {
+                stroke: #FFF;
+            }
+        }
+    }
+
+    &.open {
+        svg {
+            transform: rotate(180deg);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+
+.btn-contact {
+    color: #FFF;
+    /* Mundial/Body/Bold/20px */
+    // font-family: Mundial;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 30px */
+    width: 100%;
+    background-color: $cores-nautika-secundria-vinho;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 0;
+    margin-bottom: 32px;
+
+    &:hover {
+        background-color: #000;
+        color: #FFF;
+    }
+}
+
+.btn-menu {
+    display: none;
+
+    @include device(l) {
+        display: block;
+    }
+}
+
+.btn-link-mobile {
+    text-transform: uppercase;
+    color: #FFF;
+    /* Mundial/Body/Bold/16px */
+    // font-family: Mundial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #A03233;
+    padding: 6px 24px;
+    margin-left: 24px;
+}
+
+.btn-filter{
+    align-items: center;
+    gap: 7px;
+
+    color:  #000;
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid  #000;
+
+    &:hover {
+        border: 1px solid  #000;
+    }
+
+    .filter-count{
+        font-size: 12px;
+        color: #FFF;
+        background: #000;
+        width: 18px;
+        height: 18px;
+        border-radius: 50px;
+        
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+        &.active{
+            display: flex;
+        }
+    }
+}
+
+.btn-filter-mobile{
+    border-radius: 5px;
+    background:  #A03233;
+
+    color:  #FFF;
+
+    /* Mundial/Body/Bold/16px */
+    // font-family: Mundial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 16px 0;
+    border: none;
+    border: 1px solid  #A03233;
+    width: 50%;
+}
+
+.btn-filter-remove-mobile{
+    border-radius: 5px;
+    background:  none;
+    width: 50%;
+    color:  #000;
+
+    /* Mundial/Body/Bold/16px */
+    // font-family: Mundial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 16px 0;
+    border: none;
+    border: 1px solid  #000;
+}
+
+.selectFake{
+    border: 1px solid #A03233;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #FFF;
+    color:  #A03233;
+
+    /* Mundial/Body/Demibold/16px */
+    // font-family: Mundial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 5px;
+
+    &.open{
+        svg{
+            transform: rotate(180deg);
+        }
+    }
+}

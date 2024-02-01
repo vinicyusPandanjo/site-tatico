@@ -1,0 +1,76 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @include device(md){
+        gap: 16px;
+    }
+
+    .accordion-item:first-of-type .accordion-button {
+        border-radius: 5px;
+    }
+
+    .accordion-item {
+        padding: 0;
+        margin: 0;
+        border-color: transparent;
+        border-radius: 10px;
+
+        .accordion-header {
+            .accordion-button {
+                background: #F5F5F5;
+                border-radius: 10px;
+                box-shadow: none;
+                color: #000;
+                // font-family: Mundial;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%;
+                /* 30px */
+                padding: 8px 24px;
+                transition: all 0.2s ease-in-out;
+
+                @include device(md){
+                    font-size: 16px;
+                    padding: 8px 16px;
+                }
+
+                &:hover {
+                    background: #A03233;
+                    color: #FFF;
+
+                    &::after {
+                        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+                    }
+                }
+            }
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #A03233;
+            color: #fff;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+        }
+
+        .accordion-body {
+            padding: 16px 8px 16px 24px;
+            color: #000;
+            // font-family: Mundial;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            /* 24px */
+
+            @include device(md){
+                padding: 16px 8px 16px 16px;
+                font-size: 14px;
+            }
+        }
+    }
+}
