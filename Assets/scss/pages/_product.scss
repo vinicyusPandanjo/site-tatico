@@ -1,4 +1,5 @@
-    .product {
+    .product,
+    .product-vertical{
         main {
             margin-top: 18px;
             .product-content {
@@ -416,3 +417,175 @@
             }
         }
     }
+
+    .product-vertical{
+        
+        .product-image{
+           position: relative;
+           height: 100%;
+
+           @include device('md'){
+                height: auto;
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 16px;
+           }
+            .container-product-slider{
+
+            }
+            .product-image__main{
+                
+            }
+            .container-nav-slider{
+
+            }
+
+            
+        }
+    }
+
+
+
+    .slider-galeria-thumbs {
+        float: left;
+        width: 16%;
+        height: 100%;
+
+        @include device('md'){
+            float: unset;
+            width: 100%;
+            height: auto;
+            width: 95%;
+            .slick-slide {
+                margin: 0 4px;
+            }
+            /* the parent */
+            .slick-list {
+                margin: 0 -4px;
+            }
+        }
+
+
+        .slick-list  {
+            height: 100%;
+        }
+        .slick-track {
+            height: 100%;
+        }
+
+        button.slick-arrow {
+            z-index: 10;
+            width: 20px;
+            height: 20px;
+            &:before {
+                display: none;
+            }
+            &.slick-next {
+                background: url("../img/arrow-product-left.svg") no-repeat center center;
+                top: 95%;
+                transform: rotate(90deg);
+
+                @include device('md'){
+                    top: 50%;
+                    transform: rotate(0deg);
+                    right: -6%;
+                }
+
+                @include device('sm'){
+                    top: 30%;
+                }
+            }
+            &.slick-prev {
+                display: none;
+            }
+        }
+        .product-image__item{
+            padding: 2px 0;
+
+            @include device('md'){
+                padding: 0;
+            }
+        }
+
+        .product-image__item img{
+            border-radius: 5px;
+            overflow: hidden;
+            border: 2px solid $pretoNautika;
+        }
+
+        .product-image__item.slick-current.slick-active img{
+            border: 2px solid $vermelhoVinhoTAG;
+        }
+
+        
+      }
+      
+      .slider-galeria {
+        float: left;
+        width: 84%;
+        height: 100%;
+
+        @include device('md'){
+            width: 100%;
+            float: unset;
+        }
+
+        .slick-list  {
+            height: 100%;
+        }
+        .slick-track {
+            height: 100%;
+        }
+      }
+      
+      .slider-galeria div, .slider-galeria-thumbs div {
+        outline: 0;
+      }
+      
+      .slider-galeria span, .slider-galeria img {
+        display: block;
+        height: 100%;
+        margin: 0 10px 0 10px;
+        padding: 2%;
+        text-align: center;
+        object-fit: cover;
+
+        @include device('md'){
+            margin: 0;
+            padding: 0;
+        }
+      }
+      
+      .slider-galeria-thumbs span ,.slider-galeria-thumbs img{
+        display: block;
+        margin-bottom: 5px;
+        height: 100px;
+        line-height: 55px;
+        text-align: center;
+
+        @include device('md'){
+            height: 90px;
+        }
+
+        @include device('sm'){
+            height: auto;
+        }
+      }
+
+
+.slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+        text-indent: -9999px;
+        background: transparent;
+        border: 0;
+        z-index: 1000; 
+        outline: 0;
+
+        @include device('sm'){
+            transform: translateY(0%);
+        }
+      }
+      

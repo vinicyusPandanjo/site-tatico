@@ -7,6 +7,7 @@ const Methods = {
       Methods.slideHomeNews();
       Methods.slideProduct();
       Methods.slideDetailsProduct();
+      Methods.slideDetailsProductVertical();
       Methods.slideHomeBenefits();
     });
   },
@@ -203,7 +204,7 @@ const Methods = {
             slidesToShow: 2,
             slidesToScroll: 1,
             cssEase: "linear",
-            
+            centerMode: false,
           },
         },
         {
@@ -212,7 +213,7 @@ const Methods = {
             slidesToShow: 2,
             slidesToScroll: 1,
             cssEase: "linear",
-            centerMode: true,
+            centerMode: false,
             
             
           },
@@ -226,8 +227,8 @@ const Methods = {
   },
 
   slideDetailsProduct() {
-    const $slider = $(".product-image__main");
-    const $sliderNav = $(".product-image__list");
+    const $slider = $(" .product-image__main");
+    const $sliderNav = $(" .product-image__list");
 
     if (!$slider.length) return;
 
@@ -270,6 +271,77 @@ const Methods = {
     let stHeight = $(".product-image__list  .slick-track").height();
 
     $(".product-image__list  .slick-slide").css("height", stHeight + "px");
+  },
+  slideDetailsProductVertical(){
+    const $slider = $(".slider-galeria");
+    const $sliderNav = $(".slider-galeria-thumbs");
+
+    if (!$slider.length) return;
+
+    $slider.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      infinite: true,
+      asNavFor: '.slider-galeria-thumbs',
+    });
+
+    $sliderNav.slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      asNavFor: '.slider-galeria',
+      vertical: true,
+      verticalSwiping: true,
+      focusOnSelect: true,
+      infinite: true,
+    });
+
+    const $window = $(window);
+
+    $window.resize(function resize() {
+      if ($window.width() < 768) {
+        $('.slider-galeria-thumbs').slick('unslick');
+        $('.slider-galeria').slick('unslick');
+
+        $slider.slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: $sliderNav,
+        });
+    
+        $sliderNav.slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          asNavFor: $slider,
+          dots: false,
+          arrows: true,
+          varibleWidth: true,
+          focusOnSelect: true,
+    
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                
+              },
+            },
+          ],
+        });
+      }
+    }).trigger('resize');
+    
   },
   slideHomeBenefits() {
     const $slider = $(".benefits-box");
